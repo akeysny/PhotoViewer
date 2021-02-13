@@ -1,7 +1,6 @@
 # PhotoViewer
 SwiftUI, API
 
-- [x] Connected our app to Firebase
 - [x] We got Access to Unsplash API
 - [x] Review and analyzing JSON to Build a Datamodel
 - [x] Project Setup
