@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,16 @@
 		D60528E125D786EB00133158 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528CC25D786E900133158 /* ContentView.swift */; };
 		D60528E225D786EB00133158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60528CD25D786EB00133158 /* Assets.xcassets */; };
 		D60528E325D786EB00133158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60528CD25D786EB00133158 /* Assets.xcassets */; };
+		D60528EF25D7872900133158 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528EE25D7872900133158 /* Model.swift */; };
+		D60528F025D7872900133158 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528EE25D7872900133158 /* Model.swift */; };
+		D60528F525D795E500133158 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D60528F425D795E500133158 /* SDWebImageSwiftUI */; };
+		D60528F925D7989400133158 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528F825D7989400133158 /* ImageGridView.swift */; };
+		D60528FA25D7989400133158 /* ImageGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528F825D7989400133158 /* ImageGridView.swift */; };
+		D60528FE25D79C3500133158 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60528FD25D79C3500133158 /* AppTabNavigation.swift */; };
+		D605290225D79E4700133158 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605290125D79E4700133158 /* Navigation.swift */; };
+		D605290325D79E4700133158 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605290125D79E4700133158 /* Navigation.swift */; };
+		D605290725D7A40100133158 /* AppSideBarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605290625D7A40100133158 /* AppSideBarNavigation.swift */; };
+		D605290825D7A40100133158 /* AppSideBarNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D605290625D7A40100133158 /* AppSideBarNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,11 @@
 		D60528DA25D786EB00133158 /* PhotoViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60528DC25D786EB00133158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D60528DD25D786EB00133158 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		D60528EE25D7872900133158 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D60528F825D7989400133158 /* ImageGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGridView.swift; sourceTree = "<group>"; };
+		D60528FD25D79C3500133158 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
+		D605290125D79E4700133158 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		D605290625D7A40100133158 /* AppSideBarNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSideBarNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60528F525D795E500133158 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				D60528CB25D786E900133158 /* PhotoViewerApp.swift */,
+				D605290125D79E4700133158 /* Navigation.swift */,
+				D60528EE25D7872900133158 /* Model.swift */,
 				D60528CC25D786E900133158 /* ContentView.swift */,
+				D60528F825D7989400133158 /* ImageGridView.swift */,
+				D605290625D7A40100133158 /* AppSideBarNavigation.swift */,
 				D60528CD25D786EB00133158 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -77,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D60528D525D786EB00133158 /* Info.plist */,
+				D60528FD25D79C3500133158 /* AppTabNavigation.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -106,6 +127,9 @@
 			dependencies = (
 			);
 			name = "PhotoViewer (iOS)";
+			packageProductDependencies = (
+				D60528F425D795E500133158 /* SDWebImageSwiftUI */,
+			);
 			productName = "PhotoViewer (iOS)";
 			productReference = D60528D225D786EB00133158 /* PhotoViewer.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +177,9 @@
 				Base,
 			);
 			mainGroup = D60528C525D786E800133158;
+			packageReferences = (
+				D60528F325D795E500133158 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = D60528D325D786EB00133158 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,8 +214,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60528EF25D7872900133158 /* Model.swift in Sources */,
+				D605290725D7A40100133158 /* AppSideBarNavigation.swift in Sources */,
 				D60528E025D786EB00133158 /* ContentView.swift in Sources */,
+				D60528F925D7989400133158 /* ImageGridView.swift in Sources */,
+				D605290225D79E4700133158 /* Navigation.swift in Sources */,
 				D60528DE25D786EB00133158 /* PhotoViewerApp.swift in Sources */,
+				D60528FE25D79C3500133158 /* AppTabNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60528F025D7872900133158 /* Model.swift in Sources */,
 				D60528E125D786EB00133158 /* ContentView.swift in Sources */,
+				D605290325D79E4700133158 /* Navigation.swift in Sources */,
+				D60528FA25D7989400133158 /* ImageGridView.swift in Sources */,
+				D605290825D7A40100133158 /* AppSideBarNavigation.swift in Sources */,
 				D60528DF25D786EB00133158 /* PhotoViewerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +469,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D60528F325D795E500133158 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D60528F425D795E500133158 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D60528F325D795E500133158 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D60528C625D786E800133158 /* Project object */;
 }
